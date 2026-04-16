@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sky Rush</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    
+    <!--1. SPLASH SCREEN (appears first)-->
+    <div id="splash">
+      <h1>SkyRush</h1>
+      <p>Get ready to fly🚀</p>
+    </div>
+
+    <!--2. MAIN GAME (hidden at first)-->
+    <div id="game" style="display: none;">
+
+      <!--Top title-->
+      <h2>SkyRush Multiplier</h2>
+
+      <!--Multiplier display-->
+      <div id="multiplier">1.00x</div>
+      <canvas id="graphCanvas" width="600" height="300"></canvas>
+
+      <p>Balance: <span id="balance">1000</span></p>
+
+      <input type="number" id="betAmount" placeholder="Enter bet"/>
+      <p id="betMessage"></p>
+      <!--Buttons-->
+      <div>
+        <button id="betBtn">BET</button>
+        <button id="cashOutBtn">CASH OUT</button>
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
